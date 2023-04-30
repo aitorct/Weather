@@ -18,6 +18,7 @@ const CityWeather = ({ city: { name, coordinates } }: Props) => {
     getTemperatureForCoordinates(coordinates)
   );
 
+  // TO DO: Handle loading state and errors
   if (isLoading || error) return null;
 
   const {

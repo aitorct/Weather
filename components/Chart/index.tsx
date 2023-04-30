@@ -42,7 +42,7 @@ const Chart = ({ labels, data, unit }: Props) => {
         backgroundGradientFromOpacity: 0,
         backgroundGradientToOpacity: 0,
         decimalPlaces: 0,
-        color: (opacity = 255) => hexToRGBA(colors.chart, opacity),
+        color: (opacity = 255) => hexToRGBA(colors.chart, opacity), // `color` only takes RGBA colors
         labelColor: () => colors.chartLabel,
       }}
       bezier
@@ -58,7 +58,7 @@ const Chart = ({ labels, data, unit }: Props) => {
 
 const styles = StyleSheet.create({
   container: {
-    paddingBottom: -sizes.s36,
+    paddingBottom: -sizes.s36, // HOTFIX: The chart library does not properly calculate the height of the chart's container
   },
 });
 
