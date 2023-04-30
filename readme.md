@@ -1,48 +1,57 @@
-# Mobile Frontend Challenge
+# Veri Mobile Challenge
 
-## Interview process information
+This app has been built with:
+- TypeScript
+- React Native (Expo)
 
-- Below is the task statement. Please read it carefully and reach out if you have any questions!
-- The recommended amount of time to spend is **around 4 hours**. Likely not everything can be done perfectly or at all so make sure to prioritize areas that showcase your skills.
-- You can spend the time in any way you want (1 burst, 1h/day, ...), no need to track exactly what you spent your time on.
-- We would expect you to do the task within 5-7 days - once you are done, please reach out (+send the created code/resources to us). If you need more time (holiday, etc.), let us know and we'll figure it out!
+## Installation and setup
 
-## Task statement
+Clone the project locally and install the project dependencies from the root folder.
 
-When developing the Veri app, we often need to visualize different data such as glucose data in a meaningful and easily understandable way. When there are a lot of data, it’s not always possible to calculate, fetch, store and render everything at once. One of the interesting question we face is: What is the optimal fetching and rendering strategy? We would like to minimise the loading times for the user and at the same time we would like to avoid fetching a lot of unnecessary information.
+```sh
+yarn
+```
 
-This challenge focuses on fetching some data and visualizing it in graphs. You should make a demo app that visualizes temperature data from a free weather API [Open Meteo](https://open-meteo.com/). The app should visualize multiple cities’ hourly temperatures. The user should be able to swipe or scroll horizontally to switch the city. The swiping or scrolling interaction should feel responsive and smooth. 
+Run the app! 🎉
 
-The app should also have partial offline support. So after inspecting some cities’ data, the user should be able to close the app, turn the internet connection off and open the app and inspect the same cities’ data again.
+```sh
+yarn run ios
+yarn run android
+```
 
-The app could look something like this, but feel free to take creative liberty:
+## Tests
 
-![Design](./design.png)
+This project features E2E, unit, and snapshot tests.
+
+### E2E
+
+You'll first need to install [Maestro](https://www.mobile.dev/). After that, run the following command.
+
+```sh
+yarn test:e2e
+```
+
+You can find a recorded demo in the `/tests/e2e` folder.
+
+### Snapshot and unit tests
+
+Run the snapshot and unit tests using `jest`.
+
+```sh
+yarn test
+```
+
+## Used libraries
+- [`expo-router`](https://github.com/expo/router) for managing navigation
+- [`react-native-chart-kit`](https://github.com/indiespirit/react-native-chart-kit) to render awesome charts
+- [`@tanstack/react-query`](https://github.com/TanStack/query) for data fetching and caching
+- [`@react-native-async-storage/async-storage`](https://github.com/react-native-async-storage/async-storage) to store the cache for offline usage
+
+## Screenshots
+<img src="https://user-images.githubusercontent.com/6463569/235362270-0fccd84d-f48f-4858-8e5c-af255529243e.png" width="500" />
+
+## Demo
+https://user-images.githubusercontent.com/6463569/235363660-6f319ba8-5e62-4cfa-811a-595b15894fa3.mp4
 
 
-## Specification
 
-- The app should be developed using React Native. **You can find the boilerplate project on Github at:** [https://github.com/HumanEngineering/mobileChallengeGraph](https://github.com/HumanEngineering/mobileChallengeGraph)
-- The app should use [Open Meteo](https://open-meteo.com/) weather API to fetch today's hourly temperature data for each city.
-    - See the endpoint: [https://open-meteo.com/en/docs#hourly=temperature_2m](https://open-meteo.com/en/docs#hourly=temperature_2m)
-- In the boilerplate project, there is a file called `src/cityCoordinates.json`. It contains all the cities for which you need to fetch and display today's temperature data.
-- The user should be able to scroll or swipe horizontally to switch the city. The swiping or scrolling interaction should feel responsive and smooth.
-- The app should have partial offline support. If a user looked ever at the temperature of a specific city, they should be able to see that temperature also later, after an app restart, possibly without internet connection.
-
-## **Tips and hints**
-
-- Feel free to use any 3rd party libraries. For example, we left the possible chart library choice open on purpose.
-
-## **What we'll be looking for**
-
-- Ability to explain your code.
-- Clean and reasonable technical and UX decisions and the ability to argue about them.
-- Ability to prioritise and recognise what is valuable - focus on those aspects of this task where you can showcase your skills.
-
-## **When you're done**
-
-- Email your Veri contact a Github project link or a zip file of the project.
-- The GitHub project or a zip should contain
-    - A brief demo video and/or a set of screenshots showcasing the app's functionality.
-    - Make sure to highlight particularly interesting features of your solution!
-- If you send us the project as zip, please **don't** include installed `node_modules` folder or any other files listed in `.gitignore`.
