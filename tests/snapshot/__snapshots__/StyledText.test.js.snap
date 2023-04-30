@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledText renders button style correctly 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#16133A",
+      },
+      {
+        "color": "#E0E0E0",
+        "fontSize": 24,
+        "fontWeight": "500",
+      },
+    ]
+  }
+  testID="Text: StyledText test"
+>
+  StyledText test
+</Text>
+`;
+
+exports[`StyledText renders header style correctly 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#16133A",
+      },
+      {
+        "fontSize": 48,
+        "fontWeight": "bold",
+      },
+    ]
+  }
+  testID="Text: StyledText test"
+>
+  StyledText test
+</Text>
+`;
+
+exports[`StyledText renders subtitle style correctly 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#16133A",
+      },
+      {
+        "fontSize": 24,
+        "fontWeight": "500",
+      },
+    ]
+  }
+  testID="Text: StyledText test"
+>
+  StyledText test
+</Text>
+`;
+
+exports[`StyledText renders text style correctly 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#16133A",
+      },
+      {
+        "fontSize": 18,
+        "fontWeight": "bold",
+      },
+    ]
+  }
+  testID="Text: StyledText test"
+>
+  StyledText test
+</Text>
+`;
+
+exports[`StyledText renders title style correctly 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#16133A",
+      },
+      {
+        "fontSize": 32,
+        "fontWeight": "bold",
+      },
+    ]
+  }
+  testID="Text: StyledText test"
+>
+  StyledText test
+</Text>
+`;
