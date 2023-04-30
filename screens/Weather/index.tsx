@@ -4,6 +4,8 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import cityCoordinates, { City } from "@assets/cityCoordinates";
 import Button from "@components/Button";
 import CityWeather from "@components/CityWeather";
+import CustomBottomSheet from "@components/CustomBottomSheet";
+import BottomSheet from "@gorhom/bottom-sheet";
 import { i18n } from "@libs/locales";
 import colors from "@theme/colors";
 import sizes from "@theme/sizes";
@@ -12,6 +14,7 @@ const ITEM_WIDTH = Dimensions.get("window").width;
 
 const Weather = () => {
   const flatListRef = useRef<FlatList>(null);
+  const bottomSheetRef = useRef<BottomSheet>(null);
 
   const keyExtractor = useCallback((item: City) => item.name, []);
   const renderItem = useCallback(
@@ -27,7 +30,17 @@ const Weather = () => {
     []
   );
 
-  const seeMoreCities = useCallback(() => {}, []);
+  const seeMoreCities = useCallback(() => {
+    bottomSheetRef.current?.expand();
+  }, []);
+
+  const onCityPressed = useCallback((index: number) => {
+    bottomSheetRef.current?.close();
+    flatListRef.current?.scrollToIndex({
+      index,
+      animated: true,
+    });
+  }, []);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -47,6 +60,12 @@ const Weather = () => {
       <View style={styles.buttonWrapper}>
         <Button label={i18n.t("weather.jumpToCity")} onPress={seeMoreCities} />
       </View>
+      <CustomBottomSheet
+        ref={bottomSheetRef}
+        data={cityCoordinates}
+        keyExtractor={keyExtractor}
+        onItemPress={onCityPressed}
+      />
     </SafeAreaView>
   );
 };
