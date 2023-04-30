@@ -19,6 +19,7 @@ module.exports = {
   ],
   env: {
     node: true,
+    jest: true,
   },
   rules: {
     "@veri.co/veri/ban-font-weight-literals": "off",
