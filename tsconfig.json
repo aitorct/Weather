@@ -6,6 +6,7 @@
     "baseUrl": ".",
     "paths": {
       "@libs/*": ["libs/*"],
+      "@assets/*": ["assets/*"],
       "@theme/*": ["theme/*"],
     }
   }
