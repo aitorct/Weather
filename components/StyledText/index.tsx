@@ -5,7 +5,7 @@ import { StyleSheet, Text } from "react-native";
 import colors from "@theme/colors";
 import fonts from "@theme/fonts";
 
-type TextStyle = "header" | "title" | "subtitle";
+type TextStyle = "header" | "title" | "subtitle" | "button";
 
 type Props = {
   style: TextStyle;
@@ -22,6 +22,10 @@ const styles = StyleSheet.create({
   header: fonts.header,
   title: fonts.title,
   subtitle: fonts.subtitle,
+  button: {
+    ...fonts.button,
+    color: colors.buttonText,
+  },
   base: {
     color: colors.text,
   },

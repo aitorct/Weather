@@ -9,6 +9,8 @@ const palette = {
 
 export default {
   text: palette.blue,
+  buttonText: palette.lightGray,
+  buttonBackground: palette.blue,
   background: palette.lightGray,
   cardBackground: palette.smoke,
   shadow: palette.black,

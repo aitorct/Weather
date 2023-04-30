@@ -12,6 +12,10 @@ const fontWeight = {
 };
 
 export default {
+  button: {
+    fontSize: fontSizes.L,
+    fontWeight: fontWeight.semibold,
+  },
   subtitle: {
     fontSize: fontSizes.L,
     fontWeight: fontWeight.semibold,
