@@ -5,6 +5,7 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
+      "@components/*": ["components/*"],
       "@libs/*": ["libs/*"],
       "@assets/*": ["assets/*"],
       "@theme/*": ["theme/*"],
