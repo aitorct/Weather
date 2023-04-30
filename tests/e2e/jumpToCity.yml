@@ -1,0 +1,12 @@
+appId: host.exp.Exponent
+name: Jump to city flow
+---
+- launchApp
+- assertVisible:
+    id: "Text: Helsinki"
+- tapOn:
+    id: "Button: Jump to city"
+- tapOn:
+    id: "BottomSheetButton: Turku"
+- assertVisible:
+    id: "Text: Turku"

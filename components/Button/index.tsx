@@ -10,7 +10,11 @@ type Props = {
 
 const Button = ({ label, onPress }: Props) => {
   return (
-    <TouchableOpacity onPress={onPress} style={styles.button}>
+    <TouchableOpacity
+      testID={`Button: ${label}`}
+      onPress={onPress}
+      style={styles.button}
+    >
       <StyledText style="button">{label}</StyledText>
     </TouchableOpacity>
   );

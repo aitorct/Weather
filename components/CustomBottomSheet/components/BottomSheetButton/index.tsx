@@ -10,7 +10,7 @@ type Props = {
 };
 
 const BottomSheetButton = ({ onPress, label }: Props) => (
-  <TouchableOpacity onPress={onPress}>
+  <TouchableOpacity testID={`BottomSheetButton: ${label}`} onPress={onPress}>
     <View style={styles.button}>
       <StyledText style="text">{label}</StyledText>
     </View>

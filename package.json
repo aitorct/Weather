@@ -8,7 +8,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "test:e2e": "maestro test tests/e2e",
   },
   "dependencies": {
     "@gorhom/bottom-sheet": "^4",

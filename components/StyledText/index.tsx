@@ -15,7 +15,11 @@ type Props = {
 const StyledText = ({ style, children }: Props) => {
   const textStyle = [styles.base, styles[style]];
 
-  return <Text style={textStyle}>{children}</Text>;
+  return (
+    <Text testID={`Text: ${children}`} style={textStyle}>
+      {children}
+    </Text>
+  );
 };
 
 const styles = StyleSheet.create({
