@@ -1,6 +1,11 @@
 {
   "extends": "expo/tsconfig.base",
+  "moduleResolution": "node",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@libs/*": ["libs/*"],
+    }
   }
 }
