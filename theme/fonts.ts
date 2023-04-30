@@ -1,6 +1,7 @@
 import { TextStyle } from "react-native";
 
 const fontSizes = {
+  M: 18,
   L: 24,
   XL: 32,
   XXL: 48,
@@ -12,6 +13,10 @@ const fontWeight = {
 };
 
 export default {
+  text: {
+    fontSize: fontSizes.M,
+    fontWeight: fontWeight.bold,
+  },
   button: {
     fontSize: fontSizes.L,
     fontWeight: fontWeight.semibold,
