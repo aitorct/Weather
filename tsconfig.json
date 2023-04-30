@@ -6,6 +6,7 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["components/*"],
+      "@screens/*": ["screens/*"],
       "@libs/*": ["libs/*"],
       "@assets/*": ["assets/*"],
       "@theme/*": ["theme/*"],
