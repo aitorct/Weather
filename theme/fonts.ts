@@ -1,5 +1,7 @@
 import { TextStyle } from "react-native";
 
+export type StyleName = "header" | "title" | "subtitle" | "button" | "text";
+
 const fontSizes = {
   M: 18,
   L: 24,
@@ -33,4 +35,4 @@ export default {
     fontSize: fontSizes.XXL,
     fontWeight: fontWeight.bold,
   },
-} as Record<string, TextStyle>;
+} as Record<StyleName, TextStyle>;

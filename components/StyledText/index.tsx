@@ -3,12 +3,10 @@
 import React from "react";
 import { StyleSheet, Text } from "react-native";
 import colors from "@theme/colors";
-import fonts from "@theme/fonts";
-
-type TextStyle = "header" | "title" | "subtitle" | "button" | "text";
+import fonts, { StyleName } from "@theme/fonts";
 
 type Props = {
-  style: TextStyle;
+  style: StyleName;
   children: string;
 };
 
