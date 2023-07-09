@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "veriMobileChallenge",
-    "slug": "veriMobileChallenge",
-    "scheme": "verimobilechallenge",
+    "name": "weather",
+    "slug": "weather",
+    "scheme": "weather",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

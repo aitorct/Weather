@@ -1,4 +1,4 @@
-# Veri Mobile Challenge
+# Weather
 
 This app has been built with:
 
